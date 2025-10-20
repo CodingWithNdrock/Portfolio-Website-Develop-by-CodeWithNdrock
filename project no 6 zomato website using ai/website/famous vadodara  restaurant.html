@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vadodara Famous Restaurants — Zomato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #ff3b30;
+      --muted: rgba(255,255,255,0.85);
+      --bg: #101418;
+    }
+    *{box-sizing:border-box;}
+    body, html{margin:0;padding:0;font-family:'Poppins',sans-serif;background:var(--bg);color:var(--muted);}
+    
+    header {
+      position: fixed; top:0; left:0; right:0;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 28px; background: rgba(16,20,24,0.95); z-index: 1000;
+    }
+    .logo { display:flex; gap:10px; align-items:center; }
+    .logo .mark { width:42px; height:42px; background: var(--accent); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; border-radius:8px; }
+    nav ul { display:flex; list-style:none; gap:18px; margin:0; padding:0; }
+    nav a { color:white; text-decoration:none; font-weight:600; }
+    nav a:hover { color: var(--accent); }
+
+    main { padding: 100px 20px 40px; max-width: 1200px; margin: 0 auto; }
+    h1 { text-align:center; font-size: 32px; margin-bottom: 24px; color:white; }
+    .restaurant-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+    .restaurant-card { background: rgba(255,255,255,0.05); border-radius:10px; overflow:hidden; transition: transform 0.3s; }
+    .restaurant-card:hover { transform: translateY(-5px); }
+    .restaurant-card img { width:100%; height:150px; object-fit:cover; }
+    .restaurant-card p { text-align:center; padding:8px 0; font-weight:600; }
+
+    footer { padding:28px; text-align:center; color: rgba(255,255,255,0.75); margin-top:40px; }
+
+    @media(max-width:720px){ nav ul { display:none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">Z</div>
+      <div style="color:white">
+        <div style="font-weight:700">Zomato</div>
+        <div style="font-size:12px;opacity:0.85">Order food & groceries</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="restaurant.html" class="active">Restaurants</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Famous Restaurants in Vadodara</h1>
+    <div class="restaurant-grid">
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1622514824723-4cfbfaeaf91c?w=800&q=80" alt="Restaurant 1">
+        <p>Barbeque Nation</p>
+      </div>
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800&q=80" alt="Restaurant 2">
+        <p>Cafe Alfresco</p>
+      </div>
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1617196034558-0f5e06220733?w=800&q=80" alt="Restaurant 3">
+        <p>F Bar & Kitchen</p>
+      </div>
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1600891963977-9b2f20f44953?w=800&q=80" alt="Restaurant 4">
+        <p>The Blue Door Cafe</p>
+      </div>
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1624451286251-1d6717a5c75f?w=800&q=80" alt="Restaurant 5">
+        <p>Mandap</p>
+      </div>
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1621591374633-734a59c1d302?w=800&q=80" alt="Restaurant 6">
+        <p>Turquoise Villa</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Free delivery & pickup • Hot offers everyday
+  </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zomato – Investor Relations</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* --- Investor Page Custom Styles --- */
+    .investor-hero {
+      min-height: 70vh;
+      background: linear-gradient(rgba(16,20,24,0.6), rgba(16,20,24,0.6)),
+        url('https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    .investor-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 1rem;
+    }
+
+    .investor-hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .investor-content {
+      background: #fff;
+      color: #333;
+      padding: 4rem 2rem;
+    }
+
+    .investor-section {
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      text-align: center;
+    }
+
+    .investor-section h2 {
+      color: #ff3b30;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .investor-section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .stat-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .stat-card h3 {
+      color: #ff3b30;
+      font-size: 1.5rem;
+    }
+
+    .stat-card p {
+      color: #444;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background: #0f1724;
+      color: rgba(255,255,255,0.8);
+      text-align: center;
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="mark">Z</div>
+      <div style="color:white">
+        <div style="font-weight:700;">Zomato</div>
+        <div style="font-size:12px;opacity:0.85;">Investor Relations</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="add-restaurant.html">Add Restaurant</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="investor-hero">
+    <div>
+      <h1>Empowering Growth Through Innovation</h1>
+      <p>Discover Zomato’s journey, financial performance, and our mission to revolutionize the food ecosystem worldwide.</p>
+    </div>
+  </section>
+
+  <section class="investor-content">
+    <div class="investor-section">
+      <h2>Our Vision</h2>
+      <p>We aim to create a sustainable and inclusive global food ecosystem that benefits consumers, restaurants, and delivery partners alike.</p>
+    </div>
+
+    <div class="investor-section">
+      <h2>Financial Highlights</h2>
+      <div class="stats">
+        <div class="stat-card">
+          <h3>$1.2B+</h3>
+          <p>Annual Revenue FY25</p>
+        </div>
+        <div class="stat-card">
+          <h3>80M+</h3>
+          <p>Monthly Active Users</p>
+        </div>
+        <div class="stat-card">
+          <h3>25+</h3>
+          <p>Countries Served</p>
+        </div>
+        <div class="stat-card">
+          <h3>₹450 Cr+</h3>
+          <p>Invested in Sustainable Growth</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="investor-section">
+      <h2>Our Commitment</h2>
+      <p>We continue to invest in technology, partner welfare, and environmental responsibility. Our commitment to innovation drives us forward as one of the fastest-growing food delivery platforms globally.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Zomato Pvt. Ltd. | All rights reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

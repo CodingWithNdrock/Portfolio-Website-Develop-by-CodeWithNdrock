@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jetsky Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Header / Navbar ===== -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Jetsky Technology</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Innovate, Implement, Inspire</h1>
+            <p>We deliver cutting-edge tech solutions to empower your business.</p>
+            <button class="btn" id="openFormBtn">Apply for Job</button>
+        </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Jetsky Technology</h2>
+            <p>Jetsky Technology is a leading software and IT solutions provider, delivering innovative technology services to businesses worldwide. Our team of experts ensures that every solution is tailored to meet client needs efficiently and effectively.</p>
+        </div>
+    </section>
+
+    <!-- ===== Services Section ===== -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive, and high-performing websites tailored for your business.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Apps</h3>
+                    <p>Android and iOS apps with seamless user experience and intuitive design.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure and scalable cloud computing solutions for businesses of all sizes.</p>
+                </div>
+                <div class="service-card">
+                    <h3>IT Consulting</h3>
+                    <p>Expert advice to optimize your business processes with technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Careers / Job Application Form ===== -->
+    <section id="careers" class="careers-section">
+        <div class="container">
+            <h2>Job Application Form</h2>
+            <form id="jobForm" class="form-container">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <h3>Education</h3>
+                <div class="form-group">
+                    <label for="degree">Highest Degree</label>
+                    <input type="text" id="degree" name="degree" placeholder="Enter your highest degree" required>
+                </div>
+                <div class="form-group">
+                    <label for="university">University / College</label>
+                    <input type="text" id="university" name="university" placeholder="Enter your university/college" required>
+                </div>
+
+                <h3>Experience</h3>
+                <div class="form-group">
+                    <label for="experience">Years of Experience</label>
+                    <input type="number" id="experience" name="experience" placeholder="Enter years of experience" required>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <textarea id="skills" name="skills" rows="4" placeholder="Mention your skills" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Upload Resume</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 Jetsky Technology. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

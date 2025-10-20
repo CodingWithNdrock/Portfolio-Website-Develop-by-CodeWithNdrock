@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zomato — Food delivery & Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#ff3b30;
+      --dark:#0f1724;
+      --muted:rgba(255,255,255,0.85);
+    }
+    *{box-sizing:border-box}
+    body,html{height:100%;margin:0;font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#101418;color:var(--muted)}
+
+    /* Top nav */
+    header{position:fixed;top:0;left:0;right:0;z-index:40;padding:12px 28px;display:flex;align-items:center;justify-content:space-between;background:rgba(16,20,24,0.95)}
+    .logo{display:flex;gap:10px;align-items:center}
+    .logo .mark{width:42px;height:42px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:white;text-decoration:none;font-weight:600;opacity:0.95;transition:color 0.3s;}
+    nav a:hover{color:var(--accent);}
+
+    /* Hero */
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background-image: linear-gradient(rgba(16,20,24,0.55), rgba(16,20,24,0.55)), url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop'); background-size:cover;background-position:center center;color:var(--muted);padding:3rem;text-align:center}
+    .hero-inner{max-width:1100px;width:100%}
+    .eyebrow{font-weight:700;color:var(--muted);opacity:0.95;margin-bottom:12px}
+    h1{font-size:clamp(28px,4vw,56px);line-height:1.02;margin:0 0 12px}
+    p.lead{max-width:760px;margin:0 auto 22px;color:rgba(255,255,255,0.9)}
+
+    /* Search */
+    .search-card{display:flex;gap:10px;justify-content:center;align-items:center;margin:0 auto;max-width:820px}
+    .input-wrap{display:flex;flex:1;min-width:0}
+    input[type="text"]{flex:1;padding:14px 16px;border-radius:10px;border:0;font-size:16px}
+    button.cta{background:var(--accent);border:0;color:white;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;transition:0.3s;}
+    button.cta:hover{background:#ff574d;}
+
+    /* Popular dishes */
+    .popular{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:26px}
+    .dish{background:rgba(255,255,255,0.06);padding:10px;border-radius:10px;transition:transform 0.3s;}
+    .dish:hover{transform:translateY(-6px);}
+    .dish img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    .dish p{margin:8px 0 0;font-weight:600}
+
+    /* About Us preview */
+    .about-preview{margin-top:40px;text-align:center;}
+    .about-preview h2{color:white;margin-bottom:20px;font-size:28px;}
+    .team-preview{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+    .team-member{width:180px;}
+    .team-member img{width:100%;border-radius:10px;}
+    .team-member p.name{color:white;font-weight:600;margin-top:8px;}
+    .team-member p.role{color:rgba(255,255,255,0.8);font-size:14px;}
+    .about-preview a{color:var(--accent);font-weight:600;text-decoration:none;margin-top:12px;display:inline-block;}
+
+    /* Vadodara Restaurants Preview */
+    .vadodara-preview{margin-top:50px;text-align:center;}
+    .vadodara-preview h2{color:white;margin-bottom:20px;font-size:28px;}
+    .restaurant-preview{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;justify-items:center;}
+    .restaurant-preview img{width:100%;height:120px;object-fit:cover;border-radius:10px;}
+    .restaurant-preview p{margin-top:8px;color:white;font-weight:600;}
+    .restaurant-preview a{color:var(--accent);font-weight:600;text-decoration:none;display:block;margin-top:12px;}
+
+    footer{padding:28px;text-align:center;color:rgba(255,255,255,0.75);margin-top:40px;}
+
+    @media (max-width:720px){nav ul{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">Z</div>
+      <div style="color:white">
+        <div style="font-weight:700">Zomato</div>
+        <div style="font-size:12px;opacity:0.85">Order food & groceries</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="restaurant.html">Restaurants</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero" role="main">
+    <div class="hero-inner">
+      <div class="eyebrow">Get food you love — delivered</div>
+      <h1>Delicious meals from your favourite restaurants, delivered fast.</h1>
+      <p class="lead">Explore thousands of restaurants, read reviews and order your next meal in seconds. Try searching by dish, cuisine or restaurant name.</p>
+
+      <div class="search-card" aria-label="Search for restaurants and dishes">
+        <div class="input-wrap">
+          <input id="search" type="text" placeholder="Search for dishes, restaurants or cuisines — e.g. 'pizza, biryani'" aria-label="Search">
+        </div>
+        <button class="cta" id="searchBtn">Search</button>
+      </div>
+
+      <div class="popular" style="margin-top:20px">
+        <div class="dish">
+          <img src="https://images.unsplash.com/photo-1604908177522-43d5a9f5f9b5?q=80&w=800&auto=format&fit=crop" alt="Pizza">
+          <p>Cheesy Pizza</p>
+        </div>
+        <div class="dish">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Biryani">
+          <p>Fragrant Biryani</p>
+        </div>
+      </div>
+
+      <!-- About Us Preview -->
+      <div class="about-preview">
+        <h2>Meet Our Leaders</h2>
+        <div class="team-preview">
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1614289371518-4aa1b7c9c928?w=800&q=80" alt="Rahul Singh">
+            <p class="name">Rahul Singh</p>
+            <p class="role">CTO</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1581092795360-fd1ca03a9e6b?w=800&q=80" alt="Ananya Patel">
+            <p class="name">Ananya Patel</p>
+            <p class="role">Marketing Head</p>
+          </div>
+        </div>
+        <a href="about.html">Learn more about us →</a>
+      </div>
+
+      <!-- Vadodara Restaurants Preview -->
+      <div class="vadodara-preview">
+        <h2>Famous Restaurants in Vadodara</h2>
+        <div class="restaurant-preview">
+          <div>
+            <img src="https://images.unsplash.com/photo-1622514824723-4cfbfaeaf91c?w=800&q=80" alt="Barbeque Nation">
+            <p>Barbeque Nation</p>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800&q=80" alt="Cafe Alfresco">
+            <p>Cafe Alfresco</p>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1617196034558-0f5e06220733?w=800&q=80" alt="F Bar & Kitchen">
+            <p>F Bar & Kitchen</p>
+          </div>
+        </div>
+        <a href="restaurant.html">See all Vadodara restaurants →</a>
+      </div>
+
+      <footer>Free delivery & pickup • Hot offers everyday</footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('searchBtn').addEventListener('click', function(){
+      const q = document.getElementById('search').value.trim();
+      if(!q) return alert('Try searching for a dish, cuisine or restaurant');
+      alert('Searching for: ' + q + '\n(This is a demo — wire this to your backend.)');
+    });
+  </script>
+</body>
+</html>

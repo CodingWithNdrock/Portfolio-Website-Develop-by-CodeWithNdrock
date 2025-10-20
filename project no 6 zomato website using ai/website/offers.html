@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato | Exclusive Offers</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== OFFERS PAGE STYLE ====== */
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fff0f3, #ffe9ec);
+      margin: 0;
+      color: #2c2c2c;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      color: #e23744;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #e23744;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color: #fff;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    .offers-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .offer-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .offer-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .offer-content {
+      padding: 20px;
+    }
+
+    .offer-content h3 {
+      color: #e23744;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .offer-content p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    .offer-btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 18px;
+      background: #e23744;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .offer-btn:hover {
+      background: #ff495c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111;
+      color: #fff;
+      margin-top: 60px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Zomato</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="offers.html" class="active">Offers</a></li>
+        <li><a href="add-restaurant.html">Add Restaurant</a></li>
+        <li><a href="investor.html">Investor Relations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Exclusive Zomato Offers</h2>
+      <p>Grab the hottest deals and discounts from your favorite restaurants today!</p>
+    </div>
+  </section>
+
+  <section class="offers-section">
+
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Pizza Offer">
+      <div class="offer-content">
+        <h3>50% Off on Pizzas</h3>
+        <p>Get half-price pizzas from selected outlets. Hurry, offer ends soon!</p>
+        <a href="#" class="offer-btn">Grab Offer</a>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80" alt="Burger Deal">
+      <div class="offer-content">
+        <h3>Buy 1 Get 1 Free Burger</h3>
+        <p>Double the delight with our limited-time burger BOGO offer.</p>
+        <a href="#" class="offer-btn">Grab Offer</a>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1617196036378-9e5b51e1b82a?auto=format&fit=crop&w=800&q=80" alt="Dessert Deal">
+      <div class="offer-content">
+        <h3>Free Dessert on Orders ₹499+</h3>
+        <p>Sweeten your meal with a complimentary dessert from select restaurants.</p>
+        <a href="#" class="offer-btn">Grab Offer</a>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1510626176961-4b37d0af8a2a?auto=format&fit=crop&w=800&q=80" alt="Combo Meal">
+      <div class="offer-content">
+        <h3>Flat ₹150 Off on Combo Meals</h3>
+        <p>Enjoy delicious combos at discounted prices all week long.</p>
+        <a href="#" class="offer-btn">Grab Offer</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Zomato. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
